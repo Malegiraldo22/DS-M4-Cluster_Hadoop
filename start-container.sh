@@ -10,7 +10,7 @@ echo "start hadoop-master container..."
 sudo docker run -itd \
                 --net=hadoop \
                 -p 50070:50070 \
-                -p 144.22.39.234 \
+                -p 8088:8088 \
                 --name hadoop-master \
                 --hostname hadoop-master \
                 uracilo/hadoop &> /dev/null
